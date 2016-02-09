@@ -48,8 +48,8 @@ public class CustomerCarePage extends PageObject {
 	public String getResponseMessage() {
 		
 		// wait until message changes on screen
-		for (int i=0; i<50; i++){
-			waitABit(100);
+		for (int i=0; i<10; i++){
+			waitABit(1000);
 			System.out.println(returnMessage.getTextValue());
 			if (returnMessage.getTextValue().length()>10)
 				break;
